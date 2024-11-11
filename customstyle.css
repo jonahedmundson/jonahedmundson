@@ -1,0 +1,129 @@
+body {
+  margin: auto;
+  margin-top: 100px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url('./assets/bg1.JPG'); /* Replace 'your-background-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: start;
+  /* height: 100vh;  */
+  width: 80vw;
+  font-family: Arial, serif; /* Choose an appropriate font */
+  color: #fff;
+  overflow-y: auto;
+  background-repeat: repeat-y;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px 50px;
+  align-items: center;
+  align-content: start;
+}
+
+
+a:link, a:visited, a:hover, a:active { 
+  color: #fff;
+  text-decoration: none; 
+}
+
+
+.boxx {
+  width: min(250px, 30vw);
+  height: min(250px, 30vw); 
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 12px;
+  overflow: hidden; 
+  transition: 0.3s;
+  /* font-size: min(150px, 20vw);
+  text-align: center;
+  line-height: min(250px, 30vw); */
+}
+
+
+.boxx img {
+  height: 100%;
+  width: auto;
+  object-fit: cover; 
+}
+
+.boxx:hover {
+  transform: scale(1.05);
+}
+
+.spacer {
+  height: 50px;
+}
+
+.poem {
+  background-color: rgba(0, 0, 0, 0.493);
+  padding: 30px;
+  width: fit-content;
+  border-radius: 12px;
+  -webkit-text-size-adjust: 100%;
+  line-height: 200%;
+}
+
+
+ul {
+  line-height: 200%;
+  background-color: rgba(0, 0, 0, 0.493);
+  padding: 30px;
+  width: fit-content;
+  border-radius: 12px;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul a:link, ul a:visited, ul a:hover, ul a:active {
+  text-decoration: underline;
+  color: #06c;
+}
+
+p {
+  padding: 30px;
+  border-radius: 12px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.493);
+  -webkit-text-size-adjust: 100%; 
+  line-height: 200%;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  body { 
+      margin-top: 0px;
+      width: 100vw; 
+  } 
+
+.poem {
+  width: 90vw;
+  padding: 15px;
+  margin: auto;
+  font-size: small;
+}
+
+.main {
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+h1, h2, h3 {
+  margin: 20px;
+}
+
+.reg-image img {
+  height: auto !important;
+  width: 90vw !important;
+}
+
+.nos {
+  width: 30vw !important;
+  margin: auto !important;
+}
+
+}
