@@ -148,7 +148,9 @@ p {
   } 
   
 .buttonn {
-  margin: 50px;
+  margin: 40px;
+  transform: scale(1);
+  padding: 10px;
 }
 
 .poem {
